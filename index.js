@@ -32,6 +32,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/graphql', new ControladorGrapQl())
+
   //Routes
 const produtosRoute = require("./src/routes/productos");
 app.use("/api/productos", produtosRoute);
