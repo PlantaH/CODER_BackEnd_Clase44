@@ -1,9 +1,10 @@
 const express = require("express");
-const  graphqlHTTP = require("express-graphql");
+const graphqlHTTP = require("express-graphql");
 const path = require("path");
 const session = require("express-session");
 const passport = require("passport");
 const dotenv = require("dotenv").config();
+const ControladorGrapQl = require("./src/controllers/graphql") 
 
 //Logs
 const logs = require("./src/logs/loggers");
